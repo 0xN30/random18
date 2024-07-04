@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetish Randomizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fetish Randomizer</h1>
+        <p>Choose a mode:</p>
+        <div>
+            <button onclick="setMode('random')">Random</button>
+            <button onclick="setMode('filter')">Filter by Category</button>
+        </div>
+        <div id="filter-options" class="hidden">
+            <p>Select categories (comma-separated):</p>
+            <input type="text" id="categories-input">
+        </div>
+        <button onclick="randomizeFetish()">Randomize</button>
+        <p id="result"></p>
+        <button onclick="anotherRound()">Randomize Again</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
